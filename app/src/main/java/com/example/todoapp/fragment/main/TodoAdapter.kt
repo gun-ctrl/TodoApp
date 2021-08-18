@@ -60,7 +60,7 @@ class TodoAdapter:RecyclerView.Adapter<TodoAdapter.MyViewHolder>() {
             }
             //时间
             dateTextView.text = "${todo.date.month}.${todo.date.day}"
-            timeTextView.text = "${todo.date.year}-${todo.date.month}-${todo.date.day}"
+            timeTextView.text = "${todo.date.year}-${todo.date.month+1}-${todo.date.day}"
 
            itemView.setOnClickListener {
                val action = MainFragmentDirections.actionMainFragmentToDetailFragment(todo)
