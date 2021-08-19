@@ -85,8 +85,8 @@ class MainFragment : Fragment() {
         binding.topTag.text = todo.tag.text
         when(todo.priority){
             Priority.HIGH ->binding.topPriority.setImageResource(R.drawable.red_ball)
-            Priority.MIDDLE ->binding.topPriority.setImageResource(R.drawable.yellow_ball)
-            Priority.LOW ->binding.topPriority.setImageResource(R.drawable.green)
+            Priority.MIDDLE ->binding.topPriority.setImageResource(R.drawable.green)
+            Priority.LOW ->binding.topPriority.setImageResource(R.drawable.yellow_ball)
         }
         binding.topTag.background.setTint(Color.parseColor(todo.tag.bgColor))
 
