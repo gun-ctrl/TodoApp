@@ -50,13 +50,13 @@ class TodoAdapter:RecyclerView.Adapter<TodoAdapter.MyViewHolder>() {
             titleTextView.text = todo.title
             //标签
             tagTextView.text = todo.tag.text
-                tagTextView.backgroundTintList = ColorStateList
+            tagTextView.backgroundTintList = ColorStateList
                     .valueOf(Color.parseColor(todo.tag.bgColor))
             //优先级
             when(todo.priority){
                 Priority.HIGH ->{priorityImageView.setImageResource(R.drawable.red_plate)}
-                Priority.MIDDLE ->{priorityImageView.setImageResource(R.drawable.yellow_plate)}
-                Priority.LOW ->{priorityImageView.setImageResource(R.drawable.green_plate)}
+                Priority.MIDDLE ->{priorityImageView.setImageResource(R.drawable.green_plate)}
+                Priority.LOW ->{priorityImageView.setImageResource(R.drawable.yellow_plate)}
             }
             //时间
             dateTextView.text = "${todo.date.month}.${todo.date.day}"

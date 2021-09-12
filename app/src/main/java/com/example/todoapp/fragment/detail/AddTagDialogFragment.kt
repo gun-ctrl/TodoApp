@@ -45,7 +45,7 @@ class AddTagDialogFragment:DialogFragment() {
     @SuppressLint("ShowToast")
     private fun saveTag(){
         if (binding.tagEditTextName.text.isEmpty()){
-            Toast.makeText(requireContext(),"标签名不能为空",Toast.LENGTH_LONG)
+            Toast.makeText(requireContext(),"标签名不能为空",Toast.LENGTH_LONG).show()
         }else{
             mViewModel.insertTag(TagData(0,binding.tagEditTextName.text.toString(),bgColor))
             dismiss()

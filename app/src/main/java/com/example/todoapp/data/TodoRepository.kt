@@ -10,7 +10,7 @@ import com.example.todoapp.data.model.Todo
  *@Author PC
  *@QQ 1578684787
  */
-class TodoRepository(context: Context) {
+class TodoRepository(context: Context){
     private val todoDao = TodoDatabase.getDatabase(context).getTodoDao()
     private val tagDao = TodoDatabase.getDatabase(context).getTagDao()
 

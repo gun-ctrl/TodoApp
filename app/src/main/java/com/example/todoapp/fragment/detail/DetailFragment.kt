@@ -4,6 +4,8 @@ import android.animation.Animator
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
+import android.app.Notification
+import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
@@ -200,6 +202,7 @@ class DetailFragment : Fragment(){
             .animate()
             .rotationX(-90f)
             .setDuration(300)
+                //使动画结束才消失
             .setListener(object :Animator.AnimatorListener{
                 override fun onAnimationStart(animation: Animator?) {
                 }
