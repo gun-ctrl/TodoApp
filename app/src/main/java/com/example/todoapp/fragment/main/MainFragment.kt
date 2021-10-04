@@ -50,7 +50,7 @@ class MainFragment : Fragment() {
             if (it.size > 1){
                 //把除第一条的数据添加到后面
                 //包含fromIndex 不包含ToIndex
-                mAdapter.setDatas(it.subList(0,it.size))
+                mAdapter.setDatas(it.subList(1,it.size))
             }else{
                 mAdapter.setDatas(emptyList())
             }

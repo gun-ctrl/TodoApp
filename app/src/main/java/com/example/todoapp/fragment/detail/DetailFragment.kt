@@ -154,7 +154,7 @@ class DetailFragment : Fragment(){
             if (checkInputValid()) {
                 if (mCurrentTodo==null) {
                     //创建Todo对象
-                    val TodoData = Todo(
+                    val todoData = Todo(
                         0,
                         binding.titleEditText.text.toString(),
                         binding.descriptionView.text.toString(),
@@ -163,7 +163,7 @@ class DetailFragment : Fragment(){
                         Tag(mTagData!!.title, mTagData!!.bgColor)
                     )
                     //插入数据
-                    mainViewModel.insertTodoData(TodoData)
+                    mainViewModel.insertTodoData(todoData)
 
 
                 } else {
